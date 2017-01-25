@@ -39,12 +39,10 @@ namespace WebApplication1
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
             }
 
             app.UseStaticFiles();
